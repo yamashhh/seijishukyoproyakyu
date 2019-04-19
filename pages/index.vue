@@ -96,6 +96,10 @@ p {
   font-family: 'DIN Alternate Bold';
 }
 
+footer {
+  font-family: 'DIN Alternate Regular';
+}
+
 .sns img {
   @apply mr-4;
   @apply w-8;
