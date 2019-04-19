@@ -15,7 +15,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #e4b8ff;
+  background-color: #0078cf;
+
+  background-position-x: center;
+  background-image: url('~assets/img/background/sp.png');
+  background-attachment: scroll;
+  background-size: 100% auto;
+  color: #fffce0;
+  background-repeat: repeat-y;
 }
 
 *,
@@ -25,32 +32,22 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+a {
+  color: inherit;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+@screen md {
+  html {
+    font-size: 18px;
+    background-image: url('~assets/img/background/tablet.png');
+  }
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@screen lg {
+  html {
+    font-size: 22px;
+    background-image: url('~assets/img/background/pc.png');
+    background-size: 1440px auto;
+  }
 }
 </style>

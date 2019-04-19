@@ -24,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css', '~/assets/fonts/fonts.css'],
 
   /*
    ** Plugins to load before mounting the App
@@ -34,7 +34,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   /*
    ** Build configuration

@@ -1,24 +1,89 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">
-        seijishukyoproyakyu
-      </h1>
-      <h2 class="subtitle">
-        Seijishukyoproyakyu Homepage Project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
+  <section class="container mx-auto px-8 md:px-16">
+    <img
+      class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8"
+      src="~assets/img/logo.svg"
+      decoding="async"
+    />
+    <p class="mt-4 text-white text-base tracking-wide leading-tight">
+      seijishukyoproyakyu is a band from<br class="md:hidden" />
+      TOKYO, Japan.
+    </p>
+    <p class="text-2xl md:text-3xl tracking-wide leading-tight">
+      Inspired by post-punk, <br class="md:hidden" />
+      new wave and <br />
+      <u><a href="mailto:seijishukyoproyakyu@gmail.com">your voice.</a></u>
+    </p>
+    <div class="sns flex mt-8">
+      <a href="https://twitter.com/seijishukyo_">
+        <img src="~assets/img/icon/twitter.svg" />
+      </a>
+      <a href="https://instagram.com/seijishukyoproyakyu">
+        <img src="~assets/img/icon/insta.svg" />
+      </a>
+      <a
+        href="https://itunes.apple.com/jp/artist/seijishukyoproyakyu/1378521781"
+      >
+        <img src="~assets/img/icon/applemusic.svg" />
+      </a>
+      <a href="https://open.spotify.com/artist/60ozgs7oTx67caQnZizM95">
+        <img src="~assets/img/icon/spotify.svg" />
+      </a>
+      <a href="mailto:seijishukyoproyakyu@gmail.com">
+        <img src="~assets/img/icon/mail.svg" />
+      </a>
+    </div>
+    <div class="section">
+      <span class="title">Profile</span>
+      <img
+        class="hidden lg:block w-full"
+        src="http://via.placeholder.com/650x462"
+      />
+      <img
+        class="hidden md:block lg:hidden w-full"
+        src="http://via.placeholder.com/435x341"
+      />
+      <img
+        class="block md:hidden w-full"
+        src="http://via.placeholder.com/270x384"
+      />
+    </div>
+    <div class="section">
+      <span class="title">Movies</span>
+      <div class="youtube_outer w-full">
+        <div class="youtube">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/xBlXirmJWGc"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <p class="tracking-wide">Yagi ~ An Awesome Boy ~</p>
       </div>
     </div>
+    <div class="section">
+      <span class="title">Sounds</span>
+      <div class="spotify_outer w-full">
+        <div class="spotify">
+          <iframe
+            src="https://open.spotify.com/embed/artist/60ozgs7oTx67caQnZizM95"
+            width="300"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <footer class="mt-32 text-center text-xs">
+      COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
+    </footer>
   </section>
 </template>
 
@@ -26,40 +91,61 @@
 export default {}
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
+<style scoped>
+p {
+  font-family: 'DIN Alternate Bold';
 }
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.sns img {
+  @apply mr-4;
+  @apply w-8;
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  @apply text-2xl;
+  @apply mr-0;
+  @apply text-right;
+  @apply font-semibold;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.section {
+  @apply mt-10;
+  @apply flex;
 }
 
-.links {
-  padding-top: 15px;
+@screen md {
+  .title {
+    @apply text-4xl;
+    @apply mr-4;
+  }
+  .section {
+    @apply mt-20;
+  }
+}
+
+.youtube {
+  position: relative;
+  padding-top: 55%;
+}
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.spotify {
+  position: relative;
+  padding-top: 30%;
+}
+.spotify iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
