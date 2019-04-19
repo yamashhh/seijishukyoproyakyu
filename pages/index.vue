@@ -2,7 +2,7 @@
   <section class="container mx-auto px-8 md:px-16">
     <img
       class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8"
-      src="~assets/img/logo.svg"
+      src="~assets/img/logo.pngKK"
       decoding="async"
     />
     <p class="mt-4 text-white text-base tracking-wide leading-tight">
