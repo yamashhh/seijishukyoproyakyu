@@ -19,8 +19,10 @@ html {
 
   background-position-x: center;
   background-image: url('~assets/img/background/sp.png');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: 100% auto;
+  color: #fffce0;
+  background-repeat: repeat-y;
 }
 
 *,
@@ -30,14 +32,20 @@ html {
   margin: 0;
 }
 
+a {
+  color: inherit;
+}
+
 @screen md {
   html {
+    font-size: 18px;
     background-image: url('~assets/img/background/tablet.png');
   }
 }
 
 @screen lg {
   html {
+    font-size: 22px;
     background-image: url('~assets/img/background/pc.png');
     background-size: 1440px auto;
   }
