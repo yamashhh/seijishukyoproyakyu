@@ -113,9 +113,12 @@ footer {
   font-display: swap;
 }
 
+.sns svg {
+  @apply w-8;
+}
+
 .sns div {
   @apply mr-4;
-  @apply w-8;
 }
 
 .title {
