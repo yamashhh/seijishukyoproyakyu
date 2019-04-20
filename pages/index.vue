@@ -4,11 +4,11 @@
     v-parallax.absY="0.2"
     class="container mx-auto px-8 md:px-16"
   >
-    <img
-      class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8"
-      src="~assets/img/logo.png"
-      decoding="async"
-    />
+    <picture class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8">
+      <source :src="require('~/assets/img/logo.png?webp')" type="image/webp" />
+      <source :src="require('~/assets/img/logo.png')" type="image/png" />
+      <img :src="require('~/assets/img/logo.png')" alt="logo" />
+    </picture>
     <p class="mt-4 text-white text-base tracking-wide leading-tight">
       seijishukyoproyakyu is a band from<br class="md:hidden" />
       TOKYO, Japan.
@@ -20,32 +20,41 @@
     </p>
     <div class="sns flex mt-8">
       <a href="https://twitter.com/seijishukyo_">
-        <img src="~assets/img/icon/twitter.svg" />
+        <div v-html="require('~/assets/img/icon/twitter.svg?include')"></div>
       </a>
       <a href="https://instagram.com/seijishukyoproyakyu">
-        <img src="~assets/img/icon/insta.svg" />
+        <div v-html="require('~/assets/img/icon/insta.svg?include')"></div>
       </a>
       <a
         href="https://itunes.apple.com/jp/artist/seijishukyoproyakyu/1378521781"
       >
-        <img src="~assets/img/icon/applemusic.svg" />
+        <div v-html="require('~/assets/img/icon/applemusic.svg?include')"></div>
       </a>
       <a href="https://open.spotify.com/artist/60ozgs7oTx67caQnZizM95">
-        <img src="~assets/img/icon/spotify.svg" />
+        <div v-html="require('~/assets/img/icon/spotify.svg?include')"></div>
       </a>
       <a href="mailto:seijishukyoproyakyu@gmail.com">
-        <img src="~assets/img/icon/mail.svg" />
+        <div v-html="require('~/assets/img/icon/mail.svg?include')"></div>
       </a>
     </div>
     <div class="section">
       <span class="title">Profile</span>
       <div class="profile">
-        <img class="hidden lg:block" src="~assets/img/profile/pc.png" />
+        <img
+          class="hidden lg:block"
+          src="~/assets/img/profile/pc.png"
+          alt="profile"
+        />
         <img
           class="hidden md:block lg:hidden"
           src="~assets/img/profile/tablet.png"
+          alt="profile"
         />
-        <img class="block md:hidden" src="~assets/img/profile/sp.png" />
+        <img
+          class="block md:hidden"
+          src="~assets/img/profile/sp.png"
+          alt="profile"
+        />
       </div>
     </div>
     <div class="section">
@@ -53,6 +62,7 @@
       <div class="youtube_outer w-full">
         <div class="youtube">
           <iframe
+            title="youtube"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/xBlXirmJWGc"
@@ -70,6 +80,7 @@
       <div class="spotify_outer w-full">
         <div class="spotify">
           <iframe
+            title="spotify"
             src="https://open.spotify.com/embed/artist/60ozgs7oTx67caQnZizM95"
             width="300"
             height="380"
@@ -94,13 +105,15 @@ export default {}
 <style scoped>
 p {
   font-family: 'DIN Alternate Bold';
+  font-display: swap;
 }
 
 footer {
   font-family: 'DIN Alternate Regular';
+  font-display: swap;
 }
 
-.sns img {
+.sns div {
   @apply mr-4;
   @apply w-8;
 }

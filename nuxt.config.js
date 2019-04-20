@@ -37,7 +37,8 @@ export default {
   modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
 
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    optimizeImagesInDev: true
   },
 
   /*
