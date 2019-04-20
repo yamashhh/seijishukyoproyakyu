@@ -1,5 +1,5 @@
 <template>
-  <section v-parallax.absY="0.3" class="container mx-auto px-8 md:px-16">
+  <section v-parallax.absY="0.3" class="container mx-auto px-8 md:px-16 h-full">
     <picture class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8">
       <source :src="require('~/assets/img/logo.png?webp')" type="image/webp" />
       <source :src="require('~/assets/img/logo.png')" type="image/png" />
