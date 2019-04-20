@@ -1,5 +1,9 @@
 <template>
-  <section class="container mx-auto px-8 md:px-16">
+  <section
+    v-parallax="0.2"
+    v-parallax.absY="0.2"
+    class="container mx-auto px-8 md:px-16"
+  >
     <img
       class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8"
       src="~assets/img/logo.png"
@@ -35,18 +39,14 @@
     </div>
     <div class="section">
       <span class="title">Profile</span>
-      <img
-        class="hidden lg:block w-full"
-        src="http://via.placeholder.com/650x462"
-      />
-      <img
-        class="hidden md:block lg:hidden w-full"
-        src="http://via.placeholder.com/435x341"
-      />
-      <img
-        class="block md:hidden w-full"
-        src="http://via.placeholder.com/270x384"
-      />
+      <div class="profile">
+        <img class="hidden lg:block" src="~assets/img/profile/pc.png" />
+        <img
+          class="hidden md:block lg:hidden"
+          src="~assets/img/profile/tablet.png"
+        />
+        <img class="block md:hidden" src="~assets/img/profile/sp.png" />
+      </div>
     </div>
     <div class="section">
       <span class="title">Movies</span>
@@ -62,7 +62,7 @@
           >
           </iframe>
         </div>
-        <p class="tracking-wide">Yagi ~ An Awesome Boy ~</p>
+        <p class="tracking-wide">Yagi ~ An Awesome Guy ~</p>
       </div>
     </div>
     <div class="section">
@@ -127,6 +127,12 @@ footer {
   .section {
     @apply mt-20;
   }
+}
+
+.profile img {
+  @apply max-w-full;
+  @apply h-auto;
+  box-sizing: border-box;
 }
 
 .youtube {
