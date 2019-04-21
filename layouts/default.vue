@@ -1,5 +1,5 @@
 <template>
-  <div v-parallax.absY="0.3">
+  <div v-parallax.absY="0.3" class="body">
     <header></header>
     <nuxt />
     <footer class="mt-32 text-center text-xs">
@@ -27,6 +27,11 @@ html {
   background-size: 100% auto;
   color: #fffce0;
   background-repeat: repeat-y;
+}
+
+.body {
+  perspective-origin-x: 100%;
+  transform-origin-x: 100%;
 }
 
 *,
