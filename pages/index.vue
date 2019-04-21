@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-8 md:px-16 md:pt-16 pt-8 h-full">
+  <section class="container mx-auto px-8 md:px-16 h-full">
     <picture class="block mx-auto w-64 md:w-2/3">
       <source :src="require('~/assets/img/logo.png?webp')" type="image/webp" />
       <source :src="require('~/assets/img/logo.png')" type="image/png" />

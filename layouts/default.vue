@@ -1,10 +1,12 @@
 <template>
-  <div v-parallax.absY="0.3" class="body">
-    <header></header>
-    <nuxt />
-    <footer class="mt-32 text-center text-xs">
-      COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
-    </footer>
+  <div class="main mt-16 md:my-24 mb-32K">
+    <div class="parallax" v-parallax.absY="0.3">
+      <header></header>
+      <nuxt />
+      <footer class="mt-32 text-center text-xs">
+        COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -27,11 +29,6 @@ html {
   background-size: 100% auto;
   color: #fffce0;
   background-repeat: repeat-y;
-}
-
-.body {
-  perspective-origin-x: 100%;
-  transform-origin-x: 100%;
 }
 
 *,
