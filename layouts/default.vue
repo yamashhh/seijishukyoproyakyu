@@ -1,6 +1,6 @@
 <template>
-  <div class="main mt-16 md:my-24 mb-32K">
-    <div class="parallax" v-parallax.absY="0.3">
+  <div class="main mt-16 md:my-24 mb-32">
+    <div v-parallax.absY="0.3" class="parallax">
       <header></header>
       <nuxt />
       <footer class="mt-32 text-center text-xs">
