@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div v-parallax.absY="0.3">
     <header></header>
     <nuxt />
+    <footer class="mt-32 text-center text-xs">
+      COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
+    </footer>
   </div>
 </template>
 
