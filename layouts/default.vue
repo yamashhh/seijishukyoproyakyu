@@ -31,6 +31,10 @@ html {
   background-repeat: repeat-y;
 }
 
+.parallax {
+  overflow: scroll;
+}
+
 *,
 *:before,
 *:after {
