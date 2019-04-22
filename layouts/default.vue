@@ -3,7 +3,7 @@
     <div v-parallax.absY="0.3" class="parallax">
       <header></header>
       <nuxt />
-      <footer class="mt-32 text-center text-xs">
+      <footer class="mt-24 md:mt-32 text-center text-xs">
         COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
       </footer>
     </div>
