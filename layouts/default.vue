@@ -1,5 +1,5 @@
 <template>
-  <div class="main mt-16 md:my-24 mb-32">
+  <div class="main mt-16 md:mt-24">
     <div v-parallax.absY="0.3" class="parallax">
       <header></header>
       <nuxt />
@@ -31,15 +31,15 @@ html {
   background-repeat: repeat-y;
 }
 
-.parallax {
-  overflow: scroll;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.main {
+  margin-bottom: 30vw
 }
 
 a {
