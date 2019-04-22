@@ -39,7 +39,7 @@ html {
 }
 
 .main {
-  margin-bottom: 50vw;
+  margin-bottom: 60vw;
 }
 
 a {
