@@ -3,7 +3,7 @@
     <div v-parallax.absY="0.3" class="parallax">
       <header></header>
       <nuxt />
-      <footer class="mt-24 md:mt-32 text-center text-xs">
+      <footer class="mt-16 md:mt-32 text-center text-xs">
         COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
       </footer>
     </div>
@@ -39,17 +39,28 @@ html {
 }
 
 .main {
-  margin-bottom: 60vw;
+  margin-bottom: 100px;
 }
 
 a {
   color: inherit;
 }
 
+_::-webkit-full-page-media,
+_:future,
+:root .main {
+  margin-bottom: calc(350px - 12vw);
+}
+
 @screen md {
   html {
     font-size: 18px;
     background-image: url('~assets/img/background/tablet.png');
+  }
+  _::-webkit-full-page-media,
+  _:future,
+  :root .main {
+    margin-bottom: calc(550px - 15vw);
   }
 }
 
@@ -58,6 +69,12 @@ a {
     font-size: 22px;
     background-image: url('~assets/img/background/pc.png');
     background-size: 1440px auto;
+  }
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root .main {
+    margin-bottom: calc(950px - 15vw);
   }
 }
 </style>
