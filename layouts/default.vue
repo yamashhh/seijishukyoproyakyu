@@ -49,7 +49,7 @@ a {
 _::-webkit-full-page-media,
 _:future,
 :root .main {
-  margin-bottom: calc(350px - 12vw);
+  margin-bottom: calc(400px - 12vw);
 }
 
 @screen md {
