@@ -1,8 +1,11 @@
 <template>
   <section class="container mx-auto px-8 md:px-16 h-full">
     <picture class="block mx-auto w-64 md:w-2/3">
-      <source :src="require('~/assets/img/logo.png?webp')" type="image/webp" />
-      <source :src="require('~/assets/img/logo.png')" type="image/png" />
+      <source
+        :srcset="require('~/assets/img/logo.png?webp')"
+        type="image/webp"
+      />
+      <source :srcset="require('~/assets/img/logo.png')" type="image/png" />
       <img :src="require('~/assets/img/logo.png')" alt="logo" />
     </picture>
     <p class="mt-4 text-base tracking-wide leading-tight">
@@ -55,8 +58,8 @@
     </div>
     <div class="section">
       <span class="title">Movies</span>
-      <div class="youtube_outer w-full">
-        <div class="youtube">
+      <div class="movie_outer w-full">
+        <div class="movie">
           <iframe
             title="youtube"
             width="560"
@@ -73,16 +76,15 @@
     </div>
     <div class="section">
       <span class="title">Sounds</span>
-      <div class="spotify_outer w-full">
-        <div class="spotify">
+      <div class="music_outer w-full">
+        <div class="music">
           <iframe
-            title="spotify"
-            src="https://open.spotify.com/embed/artist/60ozgs7oTx67caQnZizM95"
-            width="300"
-            height="380"
-            frameborder="0"
-            allowtransparency="true"
-            allow="encrypted-media"
+            width="100%"
+            height="300"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/625362000&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
           >
           </iframe>
         </div>
@@ -144,11 +146,11 @@ footer {
   box-sizing: border-box;
 }
 
-.youtube {
+.movie {
   position: relative;
   padding-top: 55%;
 }
-.youtube iframe {
+.movie iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -156,11 +158,11 @@ footer {
   height: 100%;
 }
 
-.spotify {
+.music {
   position: relative;
-  padding-top: 30%;
+  padding-top: 45%;
 }
-.spotify iframe {
+.music iframe {
   position: absolute;
   top: 0;
   left: 0;
