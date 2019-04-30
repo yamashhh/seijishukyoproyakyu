@@ -1,6 +1,4 @@
 import Vue from 'vue'
 import VueParallaxJs from 'vue-parallax-js'
 
-Vue.use(VueParallaxJs, {
-  className: 'container'
-})
+Vue.use(VueParallaxJs)

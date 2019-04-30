@@ -1,10 +1,6 @@
 <template>
-  <section
-    v-parallax="0.2"
-    v-parallax.absY="0.2"
-    class="container mx-auto px-8 md:px-16"
-  >
-    <picture class="block mx-auto w-64 md:w-2/3 md:mt-16 mt-8">
+  <section class="container mx-auto px-8 md:px-16 h-full">
+    <picture class="block mx-auto w-64 md:w-2/3">
       <source
         :srcset="require('~/assets/img/logo.png?webp')"
         type="image/webp"
@@ -12,7 +8,7 @@
       <source :srcset="require('~/assets/img/logo.png')" type="image/png" />
       <img :src="require('~/assets/img/logo.png')" alt="logo" />
     </picture>
-    <p class="mt-4 text-white text-base tracking-wide leading-tight">
+    <p class="mt-4 text-base tracking-wide leading-tight">
       seijishukyoproyakyu is a band from<br class="md:hidden" />
       TOKYO, Japan.
     </p>
@@ -94,9 +90,6 @@
         </div>
       </div>
     </div>
-    <footer class="mt-32 text-center text-xs">
-      COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
-    </footer>
   </section>
 </template>
 
@@ -127,7 +120,7 @@ footer {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   @apply text-2xl;
-  @apply mr-0;
+  @apply mr-2;
   @apply text-right;
   @apply font-semibold;
 }

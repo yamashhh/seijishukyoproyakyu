@@ -1,7 +1,12 @@
 <template>
-  <div>
-    <header></header>
-    <nuxt />
+  <div class="main mt-16 md:mt-24">
+    <div v-parallax.absY="0.3" class="parallax">
+      <header></header>
+      <nuxt />
+      <footer class="mt-16 md:mt-32 text-center text-xs">
+        COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -33,14 +38,29 @@ html {
   margin: 0;
 }
 
+.main {
+  margin-bottom: 100px;
+}
+
 a {
   color: inherit;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .main {
+  margin-bottom: calc(400px - 12vw);
 }
 
 @screen md {
   html {
     font-size: 18px;
     background-image: url('~assets/img/background/tablet.png');
+  }
+  _::-webkit-full-page-media,
+  _:future,
+  :root .main {
+    margin-bottom: calc(550px - 15vw);
   }
 }
 
@@ -49,6 +69,12 @@ a {
     font-size: 22px;
     background-image: url('~assets/img/background/pc.png');
     background-size: 1440px auto;
+  }
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root .main {
+    margin-bottom: calc(950px - 15vw);
   }
 }
 </style>
