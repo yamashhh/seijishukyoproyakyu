@@ -58,39 +58,22 @@
     </div>
     <div class="section">
       <span class="title">Movies</span>
-      <div class="movies w-full">
-        <div class="movie_outer">
-          <div class="movie">
-            <iframe
-              title="youtube"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/ZxQy_M0SFzY"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <p class="tracking-wide">
-            Sex with 感情 <br />(directed by Yasuyuki Nagano)
-          </p>
+      <div class="movie_outer w-full">
+        <div class="movie">
+          <iframe
+            title="youtube"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ZxQy_M0SFzY"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
         </div>
-        <div class="movie_outer mt-3">
-          <div class="movie">
-            <iframe
-              title="youtube"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/xBlXirmJWGc"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <p class="tracking-wide">Yagi ~ An Awesome Guy ~</p>
-        </div>
+        <p class="tracking-wide">
+          Sex with 感情 <br />(directed by Yasuyuki Nagano)
+        </p>
       </div>
     </div>
     <div class="section">
