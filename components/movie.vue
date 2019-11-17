@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5</div>">
+  <div class="mb-5">
     <div class="movie">
       <iframe
         title="youtube"
