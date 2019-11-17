@@ -59,21 +59,16 @@
     <div class="section">
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
-        <div class="movie">
-          <iframe
-            title="youtube"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ZxQy_M0SFzY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          >
-          </iframe>
-        </div>
-        <p class="tracking-wide">
-          Sex with 感情 <br />(directed by Yasuyuki Nagano)
-        </p>
+        <movie
+          title="LIVE MOVIE (October 22nd, 2019)"
+          author="Yasuyuki Nagano"
+          src="https://www.youtube.com/embed/ejJSFNYeUyw"
+        />
+        <movie
+          title="Sex with 感情"
+          author="Yasuyuki Nagano"
+          src="https://www.youtube.com/embed/ZxQy_M0SFzY"
+        />
       </div>
     </div>
     <div class="section">
@@ -96,7 +91,13 @@
 </template>
 
 <script>
-export default {}
+import movie from '../components/movie'
+export default {
+  components: { movie },
+  comments: {
+    movie
+  }
+}
 </script>
 
 <style scoped>
@@ -146,18 +147,6 @@ footer {
   @apply max-w-full;
   @apply h-auto;
   box-sizing: border-box;
-}
-
-.movie {
-  position: relative;
-  padding-top: 55%;
-}
-.movie iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .music {
