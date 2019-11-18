@@ -61,7 +61,7 @@
       <div class="movie_outer w-full">
         <movie
           title="LIVE MOVIE (October 22nd, 2019)"
-          author="Yasuyuki Nagano"
+          author="Shugo Azumi"
           src="https://www.youtube.com/embed/ejJSFNYeUyw"
         />
         <movie
