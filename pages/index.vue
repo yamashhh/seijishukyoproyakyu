@@ -60,14 +60,19 @@
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
         <movie
+          title="マイノリティの大群"
+          author="Gen Fukushima"
+          src="piqo8kPK9M8"
+        />
+        <movie
           title="LIVE MOVIE (October 22nd, 2019)"
           author="Shugo Azumi"
-          src="https://www.youtube.com/embed/ejJSFNYeUyw"
+          src="ejJSFNYeUyw"
         />
         <movie
           title="Sex with 感情"
           author="Yasuyuki Nagano"
-          src="https://www.youtube.com/embed/ZxQy_M0SFzY"
+          src="ZxQy_M0SFzY"
         />
       </div>
     </div>
