@@ -63,8 +63,9 @@
           data-height="500"
           class="twitter-timeline"
           href="https://twitter.com/seijishukyo_?ref_src=twsrc%5Etfw"
-          >Tweets by seijishukyo_</a
         >
+          Tweets by seijishukyo_
+        </a>
         <script
           async
           src="https://platform.twitter.com/widgets.js"
