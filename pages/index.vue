@@ -57,6 +57,22 @@
       </div>
     </div>
     <div class="section">
+      <span class="title">Tweets</span>
+      <div class="w-full">
+        <a
+          data-height="500"
+          class="twitter-timeline"
+          href="https://twitter.com/seijishukyo_?ref_src=twsrc%5Etfw"
+          >Tweets by seijishukyo_</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+    </div>
+    <div class="section">
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
         <movie
