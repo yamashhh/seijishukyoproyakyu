@@ -60,6 +60,11 @@
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
         <movie
+          title="現状FUCK YOU"
+          author="Yasuyuki Nagano"
+          src="I_Uc4Rp-nrU"
+        />
+        <movie
           title="マイノリティの大群"
           author="Gen Fukushima"
           src="piqo8kPK9M8"
@@ -92,16 +97,38 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <span class="title">Merchandise</span>
+      <div>
+        <a href="https://store.line.me/stickershop/product/10663855">
+          <div class="flex flex-row justify-between w-full">
+            <img
+              class="w-1/3"
+              :src="require('~/assets/img/merchandise/stamp1.jpg')"
+            />
+            <img
+              class="w-1/3"
+              :src="require('~/assets/img/merchandise/stamp2.jpg')"
+            />
+            <img
+              class="w-1/3"
+              :src="require('~/assets/img/merchandise/stamp3.jpg')"
+            />
+          </div>
+          <div>公式LINEスタンプ</div>
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import movie from '../components/movie'
 export default {
-  components: { movie },
   comments: {
     movie
-  }
+  },
+  components: { movie }
 }
 </script>
 
