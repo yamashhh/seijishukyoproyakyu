@@ -120,15 +120,15 @@
         <a href="https://store.line.me/stickershop/product/10663855">
           <div class="flex flex-row justify-between w-full">
             <img
-              class="w-1/3"
+              class="w-1/3 h-auto"
               :src="require('~/assets/img/merchandise/stamp1.jpg')"
             />
             <img
-              class="w-1/3"
+              class="w-1/3 h-auto"
               :src="require('~/assets/img/merchandise/stamp2.jpg')"
             />
             <img
-              class="w-1/3"
+              class="w-1/3 h-auto"
               :src="require('~/assets/img/merchandise/stamp3.jpg')"
             />
           </div>
