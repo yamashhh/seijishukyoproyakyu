@@ -92,16 +92,49 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <span class="title">Merchandise</span>
+      <div>
+        <a href="https://store.line.me/stickershop/product/10663855">
+          <div class="flex flex-row justify-between w-full">
+            <v-lazy-image
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp1.jpg')"
+              :src-placeholder="
+                require('~/assets/img/merchandise/stamp1_small.jpg')
+              "
+            />
+            <v-lazy-image
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp2.jpg')"
+              :src-placeholder="
+                require('~/assets/img/merchandise/stamp1_small.jpg')
+              "
+            />
+            <v-lazy-image
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp3.jpg')"
+              :src-placeholder="
+                require('~/assets/img/merchandise/stamp1_small.jpg')
+              "
+            />
+          </div>
+          <div>公式LINEスタンプ</div>
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
+import VLazyImage from 'v-lazy-image'
 import movie from '../components/movie'
+
 export default {
-  components: { movie },
   comments: {
     movie
-  }
+  },
+  components: { movie, VLazyImage }
 }
 </script>
 
