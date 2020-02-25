@@ -57,8 +57,30 @@
       </div>
     </div>
     <div class="section">
+      <span class="title">Tweets</span>
+      <div class="w-full">
+        <a
+          data-height="500"
+          class="twitter-timeline"
+          href="https://twitter.com/seijishukyo_?ref_src=twsrc%5Etfw"
+        >
+          Tweets by seijishukyo_
+        </a>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+    </div>
+    <div class="section">
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
+        <movie
+          title="現状FUCK YOU"
+          author="Yasuyuki Nagano"
+          src="I_Uc4Rp-nrU"
+        />
         <movie
           title="マイノリティの大群"
           author="Gen Fukushima"
@@ -92,16 +114,38 @@
         </div>
       </div>
     </div>
+    <div class="section">
+      <span class="title">Merchandise</span>
+      <div>
+        <a href="https://store.line.me/stickershop/product/10663855">
+          <div class="flex flex-row justify-between w-full">
+            <img
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp1.jpg')"
+            />
+            <img
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp2.jpg')"
+            />
+            <img
+              class="w-1/3 h-auto"
+              :src="require('~/assets/img/merchandise/stamp3.jpg')"
+            />
+          </div>
+          <div>公式LINEスタンプ</div>
+        </a>
+      </div>
+    </div>
   </section>
 </template>
 
 <script>
 import movie from '../components/movie'
 export default {
-  components: { movie },
   comments: {
     movie
-  }
+  },
+  components: { movie }
 }
 </script>
 
