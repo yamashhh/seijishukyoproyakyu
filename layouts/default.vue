@@ -44,6 +44,7 @@ html {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 _::-webkit-full-page-media,
