@@ -120,21 +120,21 @@
         <a href="https://store.line.me/stickershop/product/10663855">
           <div class="flex flex-row justify-between w-full">
             <v-lazy-image
-              class="w-1/3 h-auto"
+              class="w-1/3 h-auto self-start"
               :src="require('~/assets/img/merchandise/stamp1.jpg')"
               :src-placeholder="
                 require('~/assets/img/merchandise/stamp1_small.jpg')
               "
             />
             <v-lazy-image
-              class="w-1/3 h-auto"
+              class="w-1/3 h-auto self-start"
               :src="require('~/assets/img/merchandise/stamp2.jpg')"
               :src-placeholder="
                 require('~/assets/img/merchandise/stamp1_small.jpg')
               "
             />
             <v-lazy-image
-              class="w-1/3 h-auto"
+              class="w-1/3 h-auto self-start"
               :src="require('~/assets/img/merchandise/stamp3.jpg')"
               :src-placeholder="
                 require('~/assets/img/merchandise/stamp1_small.jpg')

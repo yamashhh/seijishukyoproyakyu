@@ -61,7 +61,7 @@ _:future,
   _::-webkit-full-page-media,
   _:future,
   :root .main {
-    margin-bottom: calc(550px - 15vw);
+    margin-bottom: calc(550px - 12vw);
   }
 }
 
