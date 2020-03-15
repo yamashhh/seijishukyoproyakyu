@@ -50,7 +50,7 @@ a {
 _::-webkit-full-page-media,
 _:future,
 :root .main {
-  margin-bottom: calc(400px - 12vw);
+  margin-bottom: 400px;
 }
 
 @screen md {
@@ -61,7 +61,7 @@ _:future,
   _::-webkit-full-page-media,
   _:future,
   :root .main {
-    margin-bottom: calc(550px - 15vw);
+    margin-bottom: 550px;
   }
 }
 
@@ -75,7 +75,7 @@ _:future,
   _::-webkit-full-page-media,
   _:future,
   :root .main {
-    margin-bottom: calc(950px - 15vw);
+    margin-bottom: 950px;
   }
 }
 </style>
