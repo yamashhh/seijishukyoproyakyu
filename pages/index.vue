@@ -39,21 +39,13 @@
     <div class="section">
       <span class="title">Profile</span>
       <div class="profile">
-        <img
-          class="hidden lg:block"
-          src="~/assets/img/profile/pc.png"
-          alt="profile"
-        />
+        <img class="hidden lg:block" :src="profile_pc" alt="profile" />
         <img
           class="hidden md:block lg:hidden"
-          src="~assets/img/profile/tablet.png"
+          :src="profile_tablet"
           alt="profile"
         />
-        <img
-          class="block md:hidden"
-          src="~assets/img/profile/sp.png"
-          alt="profile"
-        />
+        <img class="block md:hidden" :src="profile_sp" alt="profile" />
       </div>
     </div>
     <div class="section">
@@ -76,26 +68,15 @@
     <div class="section">
       <span class="title">Movies</span>
       <div class="movie_outer w-full">
-        <movie
-          title="現状FUCK YOU"
-          author="Yasuyuki Nagano"
-          src="I_Uc4Rp-nrU"
-        />
-        <movie
-          title="マイノリティの大群"
-          author="Gen Fukushima"
-          src="piqo8kPK9M8"
-        />
-        <movie
-          title="LIVE MOVIE (October 22nd, 2019)"
-          author="Shugo Azumi"
-          src="ejJSFNYeUyw"
-        />
-        <movie
-          title="Sex with 感情"
-          author="Yasuyuki Nagano"
-          src="ZxQy_M0SFzY"
-        />
+        <client-only>
+          <movie
+            v-for="movie in movies"
+            :key="movie.src"
+            :title="movie.title"
+            :author="movie.author"
+            :src="movie.src"
+          />
+        </client-only>
       </div>
     </div>
     <div class="section">
@@ -156,7 +137,34 @@ export default {
   comments: {
     movie
   },
-  components: { movie, VLazyImage }
+  components: { movie, VLazyImage },
+  data: function() {
+    return {
+      profile_sp: '',
+      profile_tablet: '',
+      profile_pc: '',
+      movies: []
+    }
+  },
+  async mounted() {
+    this.profile_pc = await this.$fireStorage
+      .ref('profile/pc.png')
+      .getDownloadURL()
+    this.profile_tablet = await this.$fireStorage
+      .ref('profile/tablet.png')
+      .getDownloadURL()
+    this.profile_sp = await this.$fireStorage
+      .ref('profile/sp.png')
+      .getDownloadURL()
+
+    const snapshot = await this.$fireStore
+      .collection('movies')
+      .orderBy('timestamp', 'desc')
+      .get()
+    snapshot.forEach(doc => {
+      this.movies.push(doc.data())
+    })
+  }
 }
 </script>
 
