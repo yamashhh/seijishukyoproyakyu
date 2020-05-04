@@ -34,11 +34,31 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@bazzite/nuxt-optimized-images'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@bazzite/nuxt-optimized-images',
+    '@nuxtjs/firebase'
+  ],
 
   optimizedImages: {
     optimizeImages: true,
     optimizeImagesInDev: true
+  },
+
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyCWv2IE8SiWHxvqoFtXS1j9irvfFPW3YW0',
+      authDomain: 'seijisyukyoproyakyu.firebaseapp.com',
+      databaseURL: 'https://seijisyukyoproyakyu.firebaseio.com',
+      projectId: 'seijisyukyoproyakyu',
+      storageBucket: 'seijisyukyoproyakyu.appspot.com',
+      messagingSenderId: '735042973911',
+      appId: '1:735042973911:web:fab9f30e2fb79776194092'
+    },
+    services: {
+      storage: true,
+      firestore: true
+    }
   },
 
   /*
