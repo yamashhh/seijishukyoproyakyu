@@ -150,7 +150,9 @@ export default {
     this.profile_tablet = await this.$fireStorage
       .ref('profile/tablet.png')
       .getDownloadURL()
-    this.profile_sp = this.$fireStorage.ref('profile/sp.png').getDownloadURL()
+    this.profile_sp = await this.$fireStorage
+      .ref('profile/sp.png')
+      .getDownloadURL()
 
     const snapshot = await this.$fireStore
       .collection('movies')
