@@ -4,7 +4,7 @@
       <header></header>
       <nuxt />
       <footer class="mt-16 md:mt-32 text-center text-xs">
-        COPYRIGHTS ALLRIGHTS RESERVED© seijishukyoproyakyu.
+        &copy; 2021 seijishukyoproyakyu.
       </footer>
     </div>
   </div>

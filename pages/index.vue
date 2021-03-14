@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="section">
-      <span class="title">Movies</span>
+      <span class="title">Videos</span>
       <div class="movie_outer w-full">
         <client-only>
           <movie
